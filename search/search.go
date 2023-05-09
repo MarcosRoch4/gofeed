@@ -64,6 +64,6 @@ func Register(feedType string, matcher Matcher) {
 	}
 
 	log.Println("Register", feedType, "matcher")
-	matcher[feedType] = matcher
+	matchers[feedType] = matcher
 
 }

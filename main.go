@@ -3,7 +3,9 @@ package main
 import (
 	"log"
 	"os"
-	"search"
+
+	_ "github.com/MarcosRoch4/gofeed/matchers"
+	"github.com/MarcosRoch4/gofeed/search"
 )
 
 func init() {

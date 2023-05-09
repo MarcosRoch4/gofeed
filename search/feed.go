@@ -1,21 +1,21 @@
 package search
 
-import(
+import (
 	"encoding/json"
 	"os"
 )
 
-const dataFile := "data/data.json"
+const dataFile = "data/data.json"
 
 // Feed contém informações necessárias para processar um feed
 type Feed struct {
 	Name string `json:"site"`
-	URI string `json:"site"`
+	URI  string `json:"link"`
 	Type string `json:"type"`
 }
 
 // RetrieveFeeds lê e faz o unmarshal do arquivo de dados de feed
-func RetrieveFeeds()([]*Feed,error)  {
+func RetrieveFeeds() ([]*Feed, error) {
 	//Abre o arquivo
 	file, err := os.Open(dataFile)
 	if err != nil {

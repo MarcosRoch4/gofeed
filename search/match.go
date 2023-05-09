@@ -3,7 +3,6 @@ package search
 import (
 	"fmt"
 	"log"
-	_ "log"
 )
 
 // Result contém o resultado de uma pesquisa
